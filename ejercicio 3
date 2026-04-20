@@ -1,0 +1,28 @@
+public class ejercicio3 : MonoBehaviour
+{
+    public int vidaActual = 100;
+    public int dañoRecibido = 30;
+    void Start()
+    {
+        vidaActual = vidaActual - dañoRecibido;
+        if (vidaActual > 30)
+        {
+            Debug.Log("Jugador estable");
+
+        }
+        if (vidaActual > 0 && vidaActual < 31)
+        {
+            Debug.Log("Jugador en peligro");
+        }
+        if (vidaActual <= 0)
+        {
+            Debug.Log("Game Over");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
