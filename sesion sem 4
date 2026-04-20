@@ -1,0 +1,33 @@
+public class gameManager : MonoBehaviour
+{
+    
+    [SerializeField] private int vida = 10;
+    [SerializeField] private bool tieneLlave = false;
+
+    void Start()
+    {
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log("SPACE");
+            if (tieneLlave == true && vida >=5)
+            {
+                Debug.Log("Puedes entrar");
+
+            }
+            else
+            {
+                Debug.Log("no entraste");
+                    }
+        }
+           
+        {
+
+        }
+    }
+}
