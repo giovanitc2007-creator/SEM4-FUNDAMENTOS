@@ -1,0 +1,18 @@
+public class Ejercicio1 : MonoBehaviour
+{
+    public int energiaActual = 100;
+    public int costoDeHabilidad = 20;    
+    
+
+
+    void Start()
+    {
+        int energiarestante = (energiaActual - costoDeHabilidad);
+        Debug.Log("tienes energia" + energiarestante);
+        if (energiarestante < 1)
+        { 
+            Debug.Log("no tienes energia");
+        
+        }
+
+    }
